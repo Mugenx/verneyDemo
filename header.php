@@ -58,7 +58,7 @@
       <div class="container-fluid" style="background-color:#f3f8fc;color:#fff; padding:0;
       margin-bottom: -10px" >
       <div style="background: linear-gradient(to right, rgba(0,51,102,0.5),rgba(250,250,250,1),rgba(250,250,250,1),rgba(250,250,250,1),rgba(0,51,102,0.5)" align="center" >
-        <a href="index.php"><img src="img/vcm_logo.png" style="width: 35vmin; padding:25px 0"></a>
+        <a href="index.php"><img src="img/vcm_logo.png" style="width: 55vmin; padding:25px 0"></a>
         <p style="color: #003366; padding: 1rem; font-size: 3vmin; font-family:times new roman; font-style: italic;">
         "Celebrating 15 Years of Event Production and Management in Canada!"
         </p>
