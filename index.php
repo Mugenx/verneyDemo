@@ -60,7 +60,7 @@ include ('header.php');
 
   <!-- D -->
   <div class="d" id="d">
-    <div class="arrow-right"></div>
+    <div class="arrow-right" style="position: absolute;"></div>
     <p class="dTitle" align="center" style="margin-top: 100px">
       <span style="color: white; font-size: 30px;">
         Become a Partner
