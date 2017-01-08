@@ -40,9 +40,14 @@
           padding-top: 15px;
           font-size: 15px;
         }
-        .navbar-nav{
-          padding-left: 190px;
-          /*width: 120%;*/
+        .navbar .navbar-nav {
+          display: inline-block;
+          float: none;
+          vertical-align: top;
+        }
+
+        .navbar .navbar-collapse {
+          text-align: center;
         }
 
       </style>
@@ -55,7 +60,7 @@
       <div style="background: linear-gradient(to right, rgba(0,51,102,0.5),rgba(250,250,250,1),rgba(250,250,250,1),rgba(250,250,250,1),rgba(0,51,102,0.5)" align="center" >
         <a href="index.php"><img src="img/vcm_logo.png" style="width: 35vmin; padding:25px 0"></a>
         <p style="color: #003366; padding: 1rem; font-size: 3vmin; font-family:times new roman; font-style: italic;">
-          "Celebrating 15 years of Event Production and Management in Canada!"
+        "Celebrating 15 Years of Event Production and Management in Canada!"
         </p>
       </div>
     </div>
