@@ -203,7 +203,7 @@ include ('header.php');
     </div>
   </div>
 
-  <hr class="featurette-divider">
+  <!-- <hr class="featurette-divider"> -->
 
 </div>
 <!-- /END THE FEATURETTES -->
