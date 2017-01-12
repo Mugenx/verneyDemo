@@ -49,6 +49,16 @@
         .navbar .navbar-collapse {
           text-align: center;
         }
+        #nav {
+      position: fixed;
+      top: -200px;
+      width: 100%;
+      z-index: 10000;
+      transition: top 0.5s ease 0s;
+      -webkit-transition: top 0.5s ease 0s;
+      -moz-transition: top 0.5s ease 0s;
+      -o-transition: top 0.5s ease 0s;
+    }
 
       </style>
       
@@ -65,9 +75,33 @@
       </div>
     </div>
 
+    <div  class="navbar" align="center"  >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">VERNEY</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="services.php">SERVICES</a></li>
+            <li><a href="events&clients.php">EVENTS & CLIENTS</a></li>
+            <li><a href="becomepartner.php">BECOME A PARTNER</a></li>
+            <li><a href="contact.php">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
     <!-- NAVBAR ================================================== -->
-    <nav nav class="navbar" data-spy="affix" data-offset-top="350" align="center"  >
+    <nav id="nav" class="navbar" align="center"  >
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -90,6 +124,23 @@
         </div>
       </div>
     </nav>
+
+    <script type="text/javascript">
+  var $document = $(document),
+  $element = $('#nav');
+
+  $document.scroll(function() {
+    if ($document.scrollTop() >= 530) {
+      $element.stop().css({
+        top: '0px'
+      });
+    } else {
+      $element.stop().css({
+        top: '-100px'
+      });
+    }
+  });
+</script>
 
 
 

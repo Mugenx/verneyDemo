@@ -2,49 +2,65 @@
 $(document).ready(function(){
 	// A
 	$("#a").hover(function(){
+		$(".bover").clearQueue().finish();
+		$(".cover").clearQueue().finish();
+		$(".dover").clearQueue().finish();
 		$("#aTitle").css("transition", "0.5s");
 		$("#aTitle").css("margin-top", "50px");
 		$(".aover").fadeIn();
 	}, function(){
-		$("#aTitle").css("margin-top", "100px");
 		$(".aover").hide();
+		$("#aTitle").css("margin-top", "100px");
+		
 	});
 });
 
 $(document).ready(function(){
 	// B
 	$("#b").hover(function(){
+		$(".aover").clearQueue().finish();
+		$(".cover").clearQueue().finish();
+		$(".dover").clearQueue().finish();
 		$(".bTitle").css("transition", "0.5s");
 		$(".bTitle").css("margin-top", "100px");
 		// $(".bover").css("height", "420");
 		$(".bover").fadeIn(1000);
 	}, function(){
-		$(".bTitle").css("margin-top", "200px");
 		$(".bover").hide();
+		$(".bTitle").css("margin-top", "200px");
+		
 	});
 });
 
 $(document).ready(function(){
 	// C
 	$("#c").hover(function(){
+		$(".aover").clearQueue().finish();
+		$(".bover").clearQueue().finish();
+		$(".dover").clearQueue().finish();
 		$(".cTitle").css("transition", "0.5s");
 		$(".cTitle").css("margin-top", "50px");
 		$(".cover").fadeIn(1000);
 	}, function(){
-		$(".cTitle").css("margin-top", "100px");
 		$(".cover").hide();
+		$(".cTitle").css("margin-top", "100px");
+		
 	});
 });
 
 $(document).ready(function(){
 	// D
 	$("#d").hover(function(){
+		$(".aover").clearQueue().finish();
+		$(".bover").clearQueue().finish();
+		$(".cover").clearQueue().finish();
 		$(".dTitle").css("transition", "0.5s");
 		$(".dTitle").css("margin-top", "50px");
 		$(".dover").fadeIn(1000);
 	}, function(){
-		$(".dTitle").css("margin-top", "100px");
 		$(".dover").hide();
+		$(".dTitle").css("margin-top", "100px");
+		
 	});
 });
 
